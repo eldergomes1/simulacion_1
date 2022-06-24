@@ -16,25 +16,20 @@ for i in range (100):
   corrida += 1
   
   while j < 100 and billetera > 0:
-
     j += 1
     contador_apuestas += 1
     apuesta = random.randint(1,6)
     
     if apuesta %2 == 0:
-
       billetera = billetera + 10
       ganadas += 1
-      
     else:
-      
       billetera = billetera - 10
 
   print("Apuestas realizadas: ",contador_apuestas)
   print("Monto en Billetera: ",billetera)   
 
   if billetera > 200:
-   
    promedio_victorias += 1
   
   promedio_billetera = promedio_billetera + billetera 
